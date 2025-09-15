@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW - Pet Finder</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <img src="your-logo.png" alt="PAW Logo" class="w-12 h-12 rounded-full shadow-md">
+      <h1 class="text-2xl font-bold text-gray-700">PAW</h1>
+    </div>
+    <nav class="space-x-6">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="adoption.html" class="hover:text-blue-600">Adoption</a>
+      <a href="report.html" class="hover:text-blue-600">Report</a>
+      <a href="finder.html" class="text-blue-600 font-bold">Pet Finder</a>
+    </nav>
+  </header>
+
+  <!-- Pet Finder -->
+  <section class="py-16 bg-blue-50">
+    <div class="max-w-lg mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-blue-700">Find Your Pet ❤️🐶🐱</h2>
+      <div class="pet-stack relative h-96" id="petStack"></div>
+      <div class="mt-6 flex justify-center space-x-6">
+        <button id="noBtn" class="bg-red-500 text-white px-6 py-3 rounded-full shadow-lg">❌ No</button>
+        <button id="yesBtn" class="bg-green-500 text-white px-6 py-3 rounded-full shadow-lg">❤️ Yes</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-600 text-white text-center py-6">
+    <p>&copy; 2025 PAW | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const pets = [
+      { name: "Bella", img: "bella.png", desc: "Playful Golden Retriever" },
+      { name: "Milo", img: "milo.png", desc: "Curious little

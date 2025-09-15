@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAW - Report a Stray</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <img src="your-logo.png" alt="PAW Logo" class="w-12 h-12 rounded-full shadow-md">
+      <h1 class="text-2xl font-bold text-gray-700">PAW</h1>
+    </div>
+    <nav class="space-x-6">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="adoption.html" class="hover:text-blue-600">Adoption</a>
+      <a href="report.html" class="text-blue-600 font-bold">Report</a>
+      <a href="finder.html" class="hover:text-blue-600">Pet Finder</a>
+    </nav>
+  </header>
+
+  <!-- Report a Stray -->
+  <section class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-10 text-center">Report a Stray Animal</h3>
+    <form class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold">Type of Animal</label>
+        <select class="w-full border rounded-lg p-3">
+          <option>Dog</option>
+          <option>Cat</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold">Location Found</label>
+        <input type="text" class="w-full border rounded-lg p-3" placeholder="Enter city, street, or landmark">
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold">Appearance Description</label>
+        <textarea class="w-full border rounded-lg p-3" rows="3" placeholder="Color, size, markings, collar, etc."></textarea>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 font-semibold">Additional Details</label>
+        <textarea class="w-full border rounded-lg p-3" rows="4" placeholder="Any important info (injuries, behavior, etc.)"></textarea>
+      </div>
+      <button class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700">Submit Report</button>
+    </form>
